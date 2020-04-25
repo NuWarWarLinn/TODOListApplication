@@ -1,30 +1,24 @@
-insert into japaneselevel (japaneselevel_id,japaneselevel_name) values (1,'Beginner');
-insert into japaneselevel (japaneselevel_id,japaneselevel_name) values (2,'N5');
-insert into japaneselevel (japaneselevel_id,japaneselevel_name) values (3,'N4');
-insert into japaneselevel (japaneselevel_id,japaneselevel_name) values (4,'N3');
-insert into japaneselevel (japaneselevel_id,japaneselevel_name) values (5,'N2');
-insert into japaneselevel (japaneselevel_id,japaneselevel_name) values (6,'N1');
+INSERT INTO DEPARTMENT (DEPARTMENT_ID, DEPARTMENT_NAME) VALUES (1, 'System Development');
+INSERT INTO DEPARTMENT (DEPARTMENT_ID, DEPARTMENT_NAME) VALUES (2, 'Infra');
+INSERT INTO DEPARTMENT (DEPARTMENT_ID, DEPARTMENT_NAME) VALUES (3, 'HR');
+INSERT INTO DEPARTMENT (DEPARTMENT_ID, DEPARTMENT_NAME) VALUES (4, 'Finance');
 
-insert into department (department_id,department_name) values (1,'System Development');
-insert into department (department_id,department_name) values (2,'HR');
-insert into department (department_id,department_name) values (3,'Admin');
-insert into department (department_id,department_name) values (4,'Finance');
+INSERT INTO POSITION (POSITION_ID, POSITION_NAME) VALUES (1, 'JSE');
+INSERT INTO POSITION (POSITION_ID, POSITION_NAME) VALUES (2, 'SE');
+INSERT INTO POSITION (POSITION_ID, POSITION_NAME) VALUES (3, 'SSE');
+INSERT INTO POSITION (POSITION_ID, POSITION_NAME) VALUES (4, 'TL');
+INSERT INTO POSITION (POSITION_ID, POSITION_NAME) VALUES (5, 'PL');
+INSERT INTO POSITION (POSITION_ID, POSITION_NAME) VALUES (6, 'PM');
+INSERT INTO POSITION (POSITION_ID, POSITION_NAME) VALUES (7, 'Junior HR');
+INSERT INTO POSITION (POSITION_ID, POSITION_NAME) VALUES (8, 'Senior HR');
 
-insert into position (positon_id,position_name) values (1, 'JSE');
-insert into position (positon_id,position_name) values (2, 'SE');
-insert into position (positon_id,position_name) values (3, 'SSE');
-insert into position (positon_id,position_name) values (4, 'TL');
-insert into position (positon_id,position_name) values (5, 'PL');
-insert into position (positon_id,position_name) values (6, 'PM');
-insert into position (positon_id,position_name) values (7, 'Junior HR');
-insert into position (positon_id,position_name) values (8, 'Senior HR');
-insert into position (positon_id,position_name) values (9, 'Senior Manager');
-insert into position (positon_id,position_name) values (10, 'Senior PM');
+INSERT INTO JAPANESE_LEVEL (LEVEL_ID, LEVEL_NAME) VALUES (1, 'N1');
+INSERT INTO JAPANESE_LEVEL (LEVEL_ID, LEVEL_NAME) VALUES (2, 'N2');
+INSERT INTO JAPANESE_LEVEL (LEVEL_ID, LEVEL_NAME) VALUES (3, 'N3');
+INSERT INTO JAPANESE_LEVEL (LEVEL_ID, LEVEL_NAME) VALUES (4, 'N4');
+INSERT INTO JAPANESE_LEVEL (LEVEL_ID, LEVEL_NAME) VALUES (5, 'N5');
+INSERT INTO JAPANESE_LEVEL (LEVEL_ID, LEVEL_NAME) VALUES (6, 'Beginner');
 
-insert into user (user_id,user_name) values (1,'Admin');
-
-insert into employee (employee_id,employee_name,joinDate,position,email,phone_no,birth_date,marital_status) values (1,'Hla Hla',TO_DATE('02/04/2010', 'DD/MM/YYYY'),'JSE','hlahal@gmail.com','092020459',TO_DATE('17/05/1993', 'DD/MM/YYYY'),'S','F');
-insert into employee (employee_id,employee_name,joinDate,position,email,phone_no,birth_date,marital_status) values (2,'Mg Mg',TO_DATE('05/07/2016', 'DD/MM/YYYY'),'JSE','mgmg@gmail.com','0940404089',TO_DATE('20/05/1996', 'DD/MM/YYYY'),'M','M');
-
-
-COMMIT;
+INSERT INTO EMPLOYEE (EMPLOYEE_ID, EMPLOYEE_NAME, BIRTHDATE, GENDER, MARITAL_STATUS, LEVEL_ID, DEPARTMENT_ID, JOIN_DATE, POSITION_ID, EMAIL, PHONE) VALUES ('00000001', 'Aung Aung', TO_DATE('17/12/1993', 'DD/MM/YYYY'), 'M', 'S', 1, 2, TO_DATE('17/01/2018', 'DD/MM/YYYY'), 3, 'test1@gmail.com', '09421322345');
+INSERT INTO EMPLOYEE (EMPLOYEE_ID, EMPLOYEE_NAME, BIRTHDATE, GENDER, MARITAL_STATUS, LEVEL_ID, DEPARTMENT_ID, JOIN_DATE, POSITION_ID, EMAIL, PHONE) VALUES ('00000002', 'Hla Hla', TO_DATE('17/12/1994', 'DD/MM/YYYY'), 'F', 'S', 2, 1, TO_DATE('17/01/2019', 'DD/MM/YYYY'), 3, 'test2@gmail.com', '09421322342');
+INSERT INTO EMPLOYEE (EMPLOYEE_ID, EMPLOYEE_NAME, BIRTHDATE, GENDER, MARITAL_STATUS, LEVEL_ID, DEPARTMENT_ID, JOIN_DATE, POSITION_ID, EMAIL, PHONE) VALUES ('00000003', 'Mg Soe', TO_DATE('17/12/1990', 'DD/MM/YYYY'), 'M', 'M', 4, 3, TO_DATE('17/01/2017', 'DD/MM/YYYY'), 3, 'test3@gmail.com', '09421322555');
